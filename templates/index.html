@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarcastic Health Advisor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: "M PLUS 1 Code", monospace;
+  font-optical-sizing:auto ;
+  font-weight: 500;
+  font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://wallpapercave.com/wp/wp3194209.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.container {
+    z-index: 2;
+    max-width: 1200px;
+    width: 90%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero {
+    flex: 1;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ff6f61;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content {
+    flex: 1;
+    text-align: left;
+}
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffb74d;
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+.content p span {
+    font-weight: bold;
+    color: #ffb74d;
+}
+.about {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eee;
+}
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #bbb;
+    font-size: 14px;
+}
+.footer a {
+    color: #ffb74d;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero" style="padding-right: 80px;">
+            SASSY ADVISOR.exe ;)
+        </div>
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Sarcastic Health Advisor</h1>
+            <p>{{.Response}}</p>
+            <p><span>Category:</span> {{.Category}} (good descision btw ok ok)</p>
+            <p><span>Sass Level:</span> {{.SassLevel}}</p>
+            <!-- About Me Section -->
+            <div class="about">
+                <h2>About Me</h2>
+                <p>Why trust boring advice when you can have some sarcastic charm to brighten your day? I'm your not-so-serious health advisor with just enough sass to make you rethink your life choices, but not enough to change them.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Need more sarcastic health tips? Visit <a href="#">SarcasmCare.com</a></p>
+    </div>
+</div>
+</body>
+</html>
